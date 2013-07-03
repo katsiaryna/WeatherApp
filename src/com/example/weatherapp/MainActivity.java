@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
 	                            mTextViewBottomerToday,
 	                            mTextViewBottomerTomorrow,
 	                            mTextViewBottomerAfterTomorrow;
-	
+	vfvfvvfvfvfvfv
 	  public    static   String      CityCurrent = CONST.CITY_MINSK;
 	private         String      mFormatCurrent = CONST.FORMAT_XML;
 	
