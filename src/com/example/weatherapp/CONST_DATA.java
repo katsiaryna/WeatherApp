@@ -6,7 +6,6 @@ import java.util.Hashtable;
 public class CONST_DATA {
 
 	
-	
 	public final String CITY_MINSK = "Minsk";
     public final String CITY_BREST = "Brest";
     public final String CITY_MOSCOW = "Moscow";
