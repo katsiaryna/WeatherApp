@@ -40,7 +40,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
     private       ProgressBar   mProgressBar;
     
     public static final CONST_DATA     CONST   = new CONST_DATA();
-	
+	private int y ;
 	private         TextView    mTextViewCurrentWeatherHeader,
 	                            mTextViewCurrentWeatherBottomer;
 	private         ImageView   mImageView;
