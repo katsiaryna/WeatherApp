@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+   
+	  <RelativeLayout 
+	      android:id="@+id/layout_relative_current"
+	      android:layout_width="match_parent"
+	      android:layout_height="0dp"
+	      android:layout_weight="3"
+	      android:background="@android:color/black">
+	    
+	    <ImageView
+	        android:id="@+id/image_view_weather_icon"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitCenter"
+	        android:layout_marginLeft="70dp"
+	        android:layout_marginRight="70dp"
+	        android:layout_marginTop="60dp" />
+
+	    <TextView
+	        android:id="@+id/text_view"
+	        android:layout_width="wrap_content"
+	        android:textSize="40sp"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:layout_alignParentRight="true"
+	        android:gravity="right"
+	        android:shadowRadius="5"
+	        android:shadowDx="2"
+	        android:shadowDy="2"
+	        android:shadowColor="@android:color/black"/>
+       <LinearLayout 
+           android:id="@+id/layout_wind"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+	       android:layout_alignParentLeft="true"
+	        >
+	    <ImageView
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:src="@drawable/pict23" />
+	    <TextView 
+	        android:id="@+id/text_view_wind"
+	        android:layout_height="40dp"
+	        android:layout_width="match_parent"
+	        android:textColor="@android:color/white"/>
+	    </LinearLayout>
+
+       <ProgressBar
+           android:id="@+id/progressBar_loading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true" />
+	       
+     </RelativeLayout>
+     <LinearLayout
+         android:id="@+id/layout_custom_widgets"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="2"
+         android:background="@android:drawable/btn_default"
+         android:orientation="horizontal">
+         
+        <LinearLayout 
+            android:id="@+id/layout_custom_widget_today"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:orientation="vertical">
+	         <TextView 
+	             android:id="@+id/text_view_header_today"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="3"
+	             android:hint="@string/today"
+	             android:textSelectHandleRight="@id/text_view_header_today"/>
+	         <ImageView 
+	             android:id="@+id/image_view_today"
+	             android:layout_width="wrap_content"
+	             android:layout_height="0dp"
+	             android:layout_weight="4"/>
+	         <TextView 
+	             android:id="@+id/text_view_bottomer_today"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="2"/>    
+         </LinearLayout>
+         <LinearLayout 
+            android:id="@+id/layout_custom_widget_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:orientation="vertical">
+	         <TextView 
+	             android:id="@+id/text_view_header_tomorrow"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="3"
+	             android:hint="@string/tomorrow"/>
+	         <ImageView 
+	             android:id="@+id/image_view_tomorrow"
+	             android:layout_width="wrap_content"
+	             android:layout_height="0dp"
+	             android:layout_weight="4"/>
+	         <TextView 
+	             android:id="@+id/text_view_bottomer_tomorrow"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="2"/>    
+         </LinearLayout>
+         <LinearLayout 
+            android:id="@+id/layout_custom_widget_after_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:orientation="vertical">
+	         <TextView 
+	             android:id="@+id/text_view_header_after_tomorrow"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="3"
+	             android:hint="@string/next"/>
+	         <ImageView 
+	             android:id="@+id/image_view_after_tomorrow"
+	             android:layout_width="wrap_content"
+	             android:layout_height="0dp"
+	             android:layout_weight="4"
+	             />
+	         <TextView 
+	             android:id="@+id/text_view_bottomer_after_tomorrow"
+	             android:layout_height="0dp"
+	             android:layout_width="wrap_content"
+	             android:layout_weight="2"/>    
+         </LinearLayout>
+        
+        
+          
+     </LinearLayout>
+
+</LinearLayout>
