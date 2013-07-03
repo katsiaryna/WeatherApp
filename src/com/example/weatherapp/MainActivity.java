@@ -40,7 +40,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
     private       ProgressBar   mProgressBar;
     
     public static final CONST_DATA     CONST   = new CONST_DATA();
-	private int y ;
+
 	private         TextView    mTextViewCurrentWeatherHeader,
 	                            mTextViewCurrentWeatherBottomer;
 	private         ImageView   mImageView;
@@ -53,8 +53,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
 	                            mTextViewBottomerToday,
 	                            mTextViewBottomerTomorrow,
 	                            mTextViewBottomerAfterTomorrow;
-	vfvfvvfvfvfvfv
-	  public    static   String      CityCurrent = CONST.CITY_MINSK;
+	public    static   String      CityCurrent = CONST.CITY_MINSK;
 	private         String      mFormatCurrent = CONST.FORMAT_XML;
 	
 	
