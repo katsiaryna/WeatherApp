@@ -97,7 +97,7 @@ public class SearchCityActivity extends Activity implements OnItemLongClickListe
 			}
 		});
 		
-		// создаем диалог jjjjjj
+		// создаем диалог jjjjjjjjjj
 		return alertDialogBuilder.create();
 		}
 		return super.onCreateDialog(id);
