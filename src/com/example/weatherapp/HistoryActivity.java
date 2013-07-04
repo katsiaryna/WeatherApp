@@ -32,7 +32,7 @@ public class HistoryActivity extends Activity {
 		
 		mCityCurrent = (String) getIntent().getExtras().get(MainActivity.EXTRA_MESSAGE);
 		mActionBar.setTitle("              " +mCityCurrent);
-		ArrayList<WeatherParams> weatherList  = MainActivity.mDateBase.getWeatherHistory(mCityCurrent);
+		ArrayList<WeatherParams> weatherList  = MainActivity.dataBase.getWeatherHistory(mCityCurrent);
 		String string ="";
 		ArrayList<String> listString = new ArrayList<String>();
 	        for (int i = 0; i< weatherList.size(); i++ ) {

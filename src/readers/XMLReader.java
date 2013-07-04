@@ -30,13 +30,7 @@ public class XMLReader extends Reader {
 			
 			return("http://api.worldweatheronline.com/free/v1/weather.ashx?q="+city+"&format=xml"+
 	    			 "&num_of_days="+String.valueOf(days)+"&key=nwahxraj9esyxkvsheunmfw6");
-		/*	return "http://free.worldweatheronline.com/feed/weather.ashx?q=" + city +
-				   "&format=xml&num_of_days=" + String.valueOf(days) + 
-				   "&key=4a2011359a105021132003";*/
-		}
-
-
 		
-	
+		}
 
 }

@@ -52,8 +52,8 @@ public class SearchCityActivity extends Activity implements OnItemLongClickListe
 			
 			public void onClick(View v) {
 				String city = ((TextView)findViewById(R.id.edit_search_city)).getText().toString();
-				MainActivity.mDateBase.addCity(city);
-			    MainActivity.mActionBarListAdapter.add(city);
+				MainActivity.dataBase.addCity(city);
+			    MainActivity.actionBarListAdapter.add(city);
 			    
 			    
 			    Intent intent = new Intent(SearchCityActivity.this,MainActivity.class);
@@ -102,8 +102,8 @@ public class SearchCityActivity extends Activity implements OnItemLongClickListe
 		return super.onCreateDialog(id);
 		}
      private void deleteCity() {
-    	 MainActivity.mActionBarListAdapter.remove(MainActivity.Cities.get(Integer.valueOf(mCurrentPosition)));
-         MainActivity.mActionBarListAdapter.notifyDataSetChanged();
+    	 MainActivity.actionBarListAdapter.remove(MainActivity.Cities.get(Integer.valueOf(mCurrentPosition)));
+         MainActivity.actionBarListAdapter.notifyDataSetChanged();
          mAdapter.notifyDataSetChanged();
      }
 	}

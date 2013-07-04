@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="keys">
-        <item >395</item>
-        <item >392</item>
-        <item >389</item>
-        <item >386</item>
-        <item >377</item>
-        <item >374</item>
-        <item >371</item>
-        <item >368</item>
-        <item >365</item>
-        <item >362</item>
-        <item >359</item>
-        <item >356</item>
-        <item >353</item>
-        <item >350</item>
-        <item >338</item>
-        <item >335</item>
-        <item >332</item>
-        <item >329</item>
-        <item >326</item>
-        <item >323</item>
-        <item >320</item>
-        <item >317</item>
-        <item >314</item>
-        <item >311</item>
-        <item >308</item>
-        <item >305</item>
-        <item >302</item>
-        <item >299</item>
-        <item >296</item>
-        <item >293</item>
-        <item >284</item>
-        <item >281</item>
-        <item >266</item>
-        <item >263</item>
-        <item >260</item>
-        <item >248</item>
-        <item >230</item>
-        <item >227</item>
-        <item >200</item>
-        <item >185</item>
-        <item >182</item>
-        <item >179</item>
-        <item >176</item>
-        <item >143</item>
-        <item >122</item>
-        <item >119</item>
-        <item >116</item>
-        <item >113</item>
+    <string-array name="keys">
+        <item >16:395</item>
+        <item >17:392</item>
+        <item >0:389</item>
+        <item >17:386</item>
+        <item >7:377</item>
+        <item >5:374</item>
+        <item >16:371</item>
+        <item >15:368</item>
+        <item >5:365</item>
+        
+        <item >5:362</item>
+        <item >12:359</item>
+        <item >12:356</item>
+        <item >11:353</item>
+        <item >7:350</item>
+        <item >14:338</item>
+        <item >16:335</item>
+        <item >14:332</item>
+        
+        <item >14:329</item>
+        <item >15:326</item>
+        <item >15:323</item>
+        <item >13:320</item>
+        
+        <item >7:317</item>
+        <item >7:314</item>
+        <item >7:311</item>
+        <item >12:308</item>
+        
+        <item >12:305</item>
+        <item >12:302</item>
+        <item >12:299</item>
+        <item >11:296</item>
+        
+        <item >11:293</item>
+        <item >7:284</item>
+        <item >7:281</item>
+        <item >11:266</item>
+        
+        <item >11:263</item>
+        <item >19:260</item>
+        <item >19:248</item>
+        <item >14:230</item>
+        
+        <item >13:227</item>
+        <item >17:200</item>
+        <item >7:185</item>
+        <item >7:182</item>
+        
+        <item >5:179</item>
+        <item >11:176</item>
+        <item >22:143</item>
+        <item >26:122</item>
+        <item >28:119</item>
+        <item >30:116</item>
+        <item >32:113</item>
        
-    </integer-array>
+    </string-array>
     
 </resources>
