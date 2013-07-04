@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
+import data.CONST_DATA;
+import data.ImageContainer;
+
 import readers.JSONReader;
 import readers.Reader;
 import readers.XMLReader;

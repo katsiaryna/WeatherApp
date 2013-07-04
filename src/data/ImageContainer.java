@@ -1,7 +1,11 @@
-package com.example.weatherapp;
+package data;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
+
+import com.example.weatherapp.R;
+import com.example.weatherapp.R.array;
+import com.example.weatherapp.R.drawable;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

@@ -1,4 +1,4 @@
-package com.example.weatherapp;
+package data;
 
 import java.util.Dictionary;
 import java.util.Hashtable;

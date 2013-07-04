@@ -12,8 +12,9 @@ import parsers.IParser;
 import parsers.JSONParser;
 import parsers.XMLParser;
 
-import com.example.weatherapp.CONST_DATA;
 import com.example.weatherapp.WeatherParams;
+
+import data.CONST_DATA;
 
 
 import android.annotation.SuppressLint;

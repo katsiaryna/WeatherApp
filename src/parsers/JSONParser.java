@@ -71,7 +71,7 @@ public class JSONParser implements IParser {
 		return hashtables;
 	}
    
-	 private void createTagValue() throws IOException {
+	private void createTagValue() throws IOException {
 		   String tag;
 		   tag = mReader.nextName();
 			
