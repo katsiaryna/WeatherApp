@@ -1,7 +1,11 @@
-package com.example.weatherapp;
+package database;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
+import weather.Serializer;
+import weather.WeatherParams;
+
 
 import android.content.ContentValues;
 import android.content.Context;

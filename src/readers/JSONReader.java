@@ -11,8 +11,8 @@ import org.w3c.dom.Node;
 import parsers.IParser;
 import parsers.JSONParser;
 import parsers.XMLParser;
+import weather.WeatherParams;
 
-import com.example.weatherapp.WeatherParams;
 
 import data.CONST_DATA;
 

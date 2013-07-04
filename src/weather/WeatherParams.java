@@ -1,4 +1,4 @@
-package com.example.weatherapp;
+package weather;
 
 import java.io.Serializable;
 

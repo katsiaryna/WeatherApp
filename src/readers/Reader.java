@@ -13,11 +13,12 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.xmlpull.v1.XmlPullParserException;
 
 import parsers.IParser;
+import weather.WeatherParams;
 import android.content.Context;
 import android.util.Log;
 
 import com.example.weatherapp.MainActivity;
-import com.example.weatherapp.WeatherParams;
+
 
 
 public abstract class Reader {

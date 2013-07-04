@@ -7,10 +7,11 @@ import java.util.Hashtable;
 import org.w3c.dom.Node;
 
 import com.example.weatherapp.MainActivity;
-import com.example.weatherapp.WeatherParams;
+
 
 import parsers.IParser;
 import parsers.XMLParser;
+import weather.WeatherParams;
 import android.content.Context;
 
 public class XMLReader extends Reader {

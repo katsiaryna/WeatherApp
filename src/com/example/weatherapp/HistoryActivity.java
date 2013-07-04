@@ -2,6 +2,8 @@ package com.example.weatherapp;
 
 import java.util.ArrayList;
 
+import weather.WeatherParams;
+
 import data.CONST_DATA;
 
 import android.annotation.TargetApi;

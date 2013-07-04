@@ -6,10 +6,12 @@ import java.util.Hashtable;
 
 import data.CONST_DATA;
 import data.ImageContainer;
+import database.DBHelper;
 
 import readers.JSONReader;
 import readers.Reader;
 import readers.XMLReader;
+import weather.WeatherParams;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.ActionBar;

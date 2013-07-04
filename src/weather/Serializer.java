@@ -1,10 +1,12 @@
-package com.example.weatherapp;
+package weather;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+
+
 
 import android.util.Log;
 import android.widget.TextView;
