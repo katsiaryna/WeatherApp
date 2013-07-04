@@ -11,7 +11,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
@@ -97,7 +96,7 @@ public class SearchCityActivity extends Activity implements OnItemLongClickListe
 			}
 		});
 		
-		// создаем диалог jjjjjjjjjjjj
+		// создаем диалог
 		return alertDialogBuilder.create();
 		}
 		return super.onCreateDialog(id);
