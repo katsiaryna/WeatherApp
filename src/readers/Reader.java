@@ -31,8 +31,33 @@ public abstract class Reader {
 	
 	protected abstract String makeUrl(String city, int days);
 	
-	protected abstract ArrayList<WeatherParams> makeWeatherParams(ArrayList<Hashtable<String,String>> hashtables);
-	
+    protected ArrayList<WeatherParams> makeWeatherParams(
+			ArrayList<Hashtable<String, String>> hashtables) {
+		
+		ArrayList<WeatherParams> weatherObjects = new ArrayList<WeatherParams>();
+		WeatherParams paramsCurrent = new WeatherParams();
+    	paramsCurrent.set(hashtables.get(0).get(MainActivity.CONST.TAG.DATE),
+    			          MainActivity.CityCurrent,
+    			          hashtables.get(0).get(MainActivity.CONST.TAG.TEMP_CUR),
+		                  "-" ,"-",
+		                  hashtables.get(0).get(MainActivity.CONST.TAG.WIND_SPEED),
+		                  hashtables.get(0).get(MainActivity.CONST.TAG.WEATHER_DESC),
+		                  hashtables.get(0).get(MainActivity.CONST.TAG.WEATHER_CODE));
+		weatherObjects.add(paramsCurrent);
+    	
+		for (int i = 1 ; i< hashtables.size(); i++ ) {
+    		WeatherParams params = new WeatherParams();
+        	params.set(       hashtables.get(i).get(MainActivity.CONST.TAG.DATE),
+        			MainActivity.CityCurrent,"-",
+        			          hashtables.get(i).get(MainActivity.CONST.TAG.TEMP_MIN),
+        			          hashtables.get(i).get(MainActivity.CONST.TAG.TEMP_MAX),
+    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WIND_SPEED),
+    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WEATHER_DESC),
+    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WEATHER_CODE));
+    		weatherObjects.add(params);
+  	    }
+		return weatherObjects;
+	}
 	public ArrayList<WeatherParams> getWeatherParams(String city, int days) {
 		InputStream stream = readDataFromUrl(makeUrl(city, days));
 		IParser parser = getParser(stream);
@@ -46,10 +71,7 @@ public abstract class Reader {
 		return null;
 	}
 	
-//	public IWeatherInfo getWeatherInfo(String city) {
-	//	return getWeatherInfo(city, 2);
-	//}
-	
+
 	private InputStream readDataFromUrl(String url) {
 		InputStream stream = null;
 		try {
@@ -63,15 +85,4 @@ public abstract class Reader {
         }
 		return stream;
 	}
-	
-	/*private void writeInDataBase(IWeatherInfo info) {
-		Weather weather = new Weather(info.getDate(), 
-									  info.getLocation(), 
-									  info.getMaxTemperature(1), 
-									  info.getMinTemperature(1),
-									  info.getWindSpeed(1));
-		DBHelper dataBase = new DBHelper(context);
-		dataBase.addWeather(weather);
-		dataBase.close();
-	}*/
-}
+}	

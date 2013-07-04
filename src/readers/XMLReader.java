@@ -26,40 +26,16 @@ public class XMLReader extends Reader {
 
 		@Override
 		protected String makeUrl(String city, int days) {
-			return "http://free.worldweatheronline.com/feed/weather.ashx?q=" + city +
+			
+			return("http://api.worldweatheronline.com/free/v1/weather.ashx?q="+city+"&format=xml"+
+	    			 "&num_of_days="+String.valueOf(days)+"&key=nwahxraj9esyxkvsheunmfw6");
+		/*	return "http://free.worldweatheronline.com/feed/weather.ashx?q=" + city +
 				   "&format=xml&num_of_days=" + String.valueOf(days) + 
-				   "&key=4a2011359a105021132003";
+				   "&key=4a2011359a105021132003";*/
 		}
 
 
-		@Override
-		protected ArrayList<WeatherParams> makeWeatherParams(
-				ArrayList<Hashtable<String, String>> hashtables) {
-			// TODO Auto-generated method stub
-			ArrayList<WeatherParams> weatherObjects = new ArrayList<WeatherParams>();
-			WeatherParams paramsCurrent = new WeatherParams();
-	    	paramsCurrent.set(hashtables.get(0).get(MainActivity.CONST.TAG.DATE),
-	    			          MainActivity.CityCurrent,
-	    			          hashtables.get(0).get(MainActivity.CONST.TAG.TEMP_CUR),
-			                  "-" ,"-",
-			                  hashtables.get(0).get(MainActivity.CONST.TAG.WIND_SPEED),
-			                  hashtables.get(0).get(MainActivity.CONST.TAG.WEATHER_DESC),
-			                  hashtables.get(0).get(MainActivity.CONST.TAG.WEATHER_CODE));
-			weatherObjects.add(paramsCurrent);
-	    	
-			for (int i = 1 ; i< hashtables.size(); i++ ) {
-	    		WeatherParams params = new WeatherParams();
-	        	params.set(       hashtables.get(i).get(MainActivity.CONST.TAG.DATE),
-	        			MainActivity.CityCurrent,"-",
-	        			          hashtables.get(i).get(MainActivity.CONST.TAG.TEMP_MIN),
-	        			          hashtables.get(i).get(MainActivity.CONST.TAG.TEMP_MAX),
-	    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WIND_SPEED),
-	    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WEATHER_DESC),
-	    		                  hashtables.get(i).get(MainActivity.CONST.TAG.WEATHER_CODE));
-	    		weatherObjects.add(params);
-	  	    }
-			return weatherObjects;
-		}
+		
 	
 
 }

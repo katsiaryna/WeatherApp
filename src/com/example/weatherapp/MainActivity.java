@@ -189,8 +189,7 @@ public class MainActivity extends Activity implements OnNavigationListener {
    
     private void interchangeAsync()  {
     	 GettingDataTask task = new GettingDataTask();
-         task.execute (( new Request( CityCurrent,
-         		                 mFormatCurrent)).create() );
+         task.execute ("ii");
     }
 
     class GettingDataTask extends AsyncTask<String, Void, Void> {
