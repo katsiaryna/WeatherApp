@@ -18,7 +18,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.weatherapp.MainActivity;
-
+dgffgf
 
 
 public abstract class Reader {
